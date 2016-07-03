@@ -13,6 +13,6 @@ Chat log parsing will continue at set intervals for as long as the program is ru
 The initial delay and frequency of chat log parsing are set internally to 10 and 30 minutes respectively.
 During each parse, a regular expression is used to identify each line containing an offer.
 The item name and price are parsed from each identified line, and the name and price are stored to an Item object.
-After each chat log has been read and its items parsed into memory, the log file is deleted.
 The Item object has its price averaged while being inserted into the ItemCollection object.
+After each chat log has been read and its items parsed into memory, the log file is deleted.
 Upon closing the program, all items and their associated average prices are written to the CSV in the same directory as the chat log.
